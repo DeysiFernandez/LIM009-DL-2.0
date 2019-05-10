@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* border: 1px solid black; */
+}
+#box-menu{
+    text-align: center; 
+    background: black;
+}
+.logo{
+    width: 90%;
+    padding: 1cm 0.2cm 1cm 0.2cm;
+}
+button{
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin: 2.5%
+}
+button:hover{
+    color: white;
+    background-color: rgb(64, 75, 80);
+}
+select{
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px;
+    margin: 1.5%;
+}
+select:hover{
+    color: white;
+    background-color: rgb(64, 75, 80);
+}
+
+.name, .house{
+    text-align: center;
+}
+h1{
+ text-align: center;
+ margin: 2% auto;   
+}
+h2, h4{
+    margin: 2% auto;
+    color: white;
+    padding-top: 10px;
+}
+label{
+    color: white;
+}
+.space{
+    margin: 0.5%;
+    background: darkcyan;
+    border-radius: 15px;
+}
+.img-profile{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    background-position: 50%;
+    background-size: 100% auto;
+    border-radius: 50%; 
+}
+#box-paint{
+    padding: 10px 15px 10px 15px;
+    
+}
+
+[class*="col-"]{
+    float: left;
+}
+@media(min-width:1200px){
+    .col-lg-12{width: 100%;}
+    .col-lg-9{width: 75%;}
+    .col-lg-8{width: 66.66666667%;}
+    .col-lg-6{width: 50%;}
+    .col-lg-4{width: 33.33333333%;}
+    .col-lg-3{width: 25%;}
+    .col-lg-2{width: 16.66666667%;}
+}
+@media(max-width: 1199px) and (min-width: 992px){
+    .col-md-12{width: 100%;}
+    .col-md-9{width: 75%;}
+    .col-md-8{width: 66.66666667%;}
+    .col-md-6{width: 50%;}
+    .col-md-4{width: 33.33333333%;}
+    .col-md-3{width: 25%;}
+    .col-md-2{width: 16.66666667%;}
+}
+@media(max-width: 991px) and (min-width:768px){
+    .col-sm-12{width: 100%;}
+    .col-sm-9{width: 75%;}
+    .col-sm-8{width: 66.66666667%;}
+    .col-sm-6{width: 50%;}
+    .col-sm-4{width: 33.33333333%;}
+    .col-sm-3{width: 25%;}
+    .col-sm-2{width: 16.66666667%;}
+}
+@media(max-width:767px){
+    .col-sx-12{width: 100%;}
+    .col-sx-9{width: 75%;}
+    .col-sx-8{width: 66.66666667%;}
+    .col-sx-6{width: 50%;}
+    .col-sx-4{width: 33.33333333%;}
+    .col-sx-3{width: 25%;}
+    .col-sx-2{width: 16.66666667%;}
+}
+
+
+
+

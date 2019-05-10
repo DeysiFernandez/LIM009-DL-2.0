@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Data Lover 2.0 Harry Potter</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <main id="root">
-      <h1>Bienvenida</h1>
+        <section id="box-menu" class="col-lg-3 col-md-3 col-sm-12 col-sx-12">            
+            <section class="col-lg-12 col-md-12 col-sm-4 col-sx-4">
+                 <header >
+                    <img src="imagenes/Logo.png" alt="potter" class="logo">
+                 </header> 
+            </section>
+            <section class="col-lg-12 col-md-12 col-sm-4 col-sx-4">           
+                    <h4>Ordenar Por Edad:</h4>
+                <div id="sort" >
+                    <button id="button-upward" >Ascendente</button>
+                    <button id="button-falling" >Descendente</button>
+                </div>
+            </section>
+            <section class="col-lg-12 col-md-12 col-sm-4 col-sx-4">
+                <h4>Filtrar Por:</h4>
+                <div id="filter">
+                    <label>Género: </label>
+                    <select id="genere" >
+                        <option>Selecione</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                    </select>                    
+                </div>
+                <div>    
+                    <label>Rol: </label>
+                    <select id="role" >
+                        <option>Selecione</option>
+                        <option value="true">Estudiante</option>
+                        <option value="false">Staff</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Casa: </label>
+                    <select id="house" >
+                        <option>Selecione</option>
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Slytherin">Slytherin</option>
+                        <option value="Ravenclaw">Ravenclaw</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                    </select>
+                </div>
+            </section>
+        </section>
+
+        <section id="box-container" class="col-lg-9 col-md-9 col-sm-12 col-sx-12">
+            <h1>Personajes de la Saga de Harry Potter</h1>
+            <div id="container"></div>
+        </section>
     </main>
     <script src="data.js"></script>
     <script src="main.js"></script>
-  </body>
+</body>
+
 </html>
