@@ -43,9 +43,13 @@ const dataFilter = [{
   "gender": "female"
 }];
 
-const dataFiltered = [{
+const dataFilterMale = [{
   "name": "Severus Snape",
   "gender": "male"
+}];
+const dataFilterFemale = [{
+  "name": "Cho Chang",
+  "gender": "female"
 }];
 
 describe("filterGenere", () => {
@@ -53,7 +57,10 @@ describe("filterGenere", () => {
     expect(typeof window.global.filterGender).toBe("function");
   });
   it("Debería filtrar Male", () => {
-    expect(window.global.filterGender(dataFilter, "male")).toEqual(dataFiltered);
+    expect(window.global.filterGender(dataFilter, "male")).toEqual(dataFilterMale);
+  });
+  it("Debería filtrar Female", () => {
+    expect(window.global.filterGender(dataFilter, "female")).toEqual(dataFilterFemale);
   });
 });
 
