@@ -2,21 +2,19 @@
 
 // Ordenar data de forma Ascendente y Descendente
 const sortAge = (data) => {
-  let age = data.sort((aa, bb) => {
+  const age = data.sort((aa, bb) => {
     aa = aa.yearOfBirth;
     bb = bb.yearOfBirth;
     if (aa > bb) {
       return -1;
-    } else if (aa < bb) {
-      return 1;
     } else {
-      return 0;
-    }
+      return 1;
+    } 
   });
   return age;  
 };
 // Filtrado por Género
-const filterGender = (data, value) => {
+const filterGender = (data, value) => {  
   let newData = data.filter(object => object.gender === value);
   return newData;
 };

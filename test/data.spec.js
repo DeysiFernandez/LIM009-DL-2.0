@@ -1,29 +1,31 @@
 require("../src/data");
 require("./data.spec.js");
-const data = [{
-  "name": "Harry Potter",
-  "yearOfBirth": 1980
-},
-{
-  "name": "Cedric Diggory",
-  "yearOfBirth": 1977
-},
-{
-  "name": "Severus Snape",
-  "yearOfBirth": 1960
-}];
-const dataSort = [{
-  "name": "Harry Potter",
-  "yearOfBirth": 1980
-},
-{
-  "name": "Cedric Diggory",
-  "yearOfBirth": 1977
-},
-{
-  "name": "Severus Snape",
-  "yearOfBirth": 1960
-}];
+const data = [
+  {
+    "name": "Cedric Diggory",
+    "yearOfBirth": 1977
+  },
+  {
+    "name": "Harry Potter",
+    "yearOfBirth": 1980  
+  },
+  { 
+    "name": "Severus Snape",
+    "yearOfBirth": 1960
+  }];
+const dataSort = [
+  {
+    "name": "Harry Potter",
+    "yearOfBirth": 1980 
+  },
+  {
+    "name": "Cedric Diggory",
+    "yearOfBirth": 1977
+  },
+  { 
+    "name": "Severus Snape",
+    "yearOfBirth": 1960
+  }];
 
 describe("sortAge", () => {
   it("Debería ser una función", () => {

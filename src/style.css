@@ -8,6 +8,7 @@
 #box-menu{
     text-align: center; 
     background: black;
+    height: 900px;
 }
 .logo{
     width: 90%;
@@ -54,6 +55,7 @@ label{
     margin: 0.5%;
     background: darkcyan;
     border-radius: 15px;
+    padding: 10px;
 }
 .img-profile{
     width: 130px;

@@ -37,7 +37,7 @@ const dataPotter = (data) => {
       newYear.push(year);
     }
   });
-
+  
   buttonA.addEventListener("click", () => {
     const dataSortUpward = global.sortAge(newYear);
     pintarData(dataSortUpward);
